@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(60deg,#02310c,#a5ff2f) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:300px;
+    align-items: center;
+
+}
+.container .box-note{
+    background-color: aliceblue;
+    width: 440px;
+    border-radius: 10px ;
+    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 10px ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    max-width: 70px;
+}
+.saisir input{
+    height: 30px;
+    width: 20pc;
+    outline: none;
+    border: none;
+    background-color: rgba(126, 127, 128, 0.373);
+    padding-left: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.saisir button{
+    height: 30px;
+    width: 5pc;
+    border-radius: 10px ;
+    border: none;
+    background-color: #05641acb;
+    font-weight: 800;
+}
+li img{
+    max-width: 20px;
+}
+
+
+ul li{
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    align-items: center;
+    margin: 7px 0;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-60%); /* Centers the bullet vertically */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('123/unchecked-28.png');
+    background-size: cover; /* Ensures the image covers the circle */
+
+
+}
+.box-note{
+    height: auto;
+}
+
+span{
+    position: absolute;
+    right: 0px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 70%;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+ul .chcked::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-60%); /* Centers the bullet vertically */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('123/chcked-removebg-preview.png');
+    background-size: cover; /* Ensures the image covers the circle */
+}
+ul .chcked{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.378);
+}
